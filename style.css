@@ -10,4 +10,11 @@
 
 .btn {
     background-color: purple;
+    padding: 20px 70px 20px 50px; 
+    text-align: center;  
+    font-weight: 900; 
+}
+
+.top-link {
+    
 }
