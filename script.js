@@ -18,23 +18,23 @@ var index = 0;
 var questions = [
     {
     question: "Arrays in JavaScript can be used to store?",
-    selections: ["Numbers and strings", "Booleans", "Other arrays", "All of the above"],
+    selections: ["Numbers and strings", "booleans", "Other arrays", "All of the above"],
     answer: "All of the above"
 },
 {
-    question: "Arrays in JavaScript can be used to store?",
-    selections: ["Numbers and strings", "Booleans", "Other arrays", "All of the above"],
-    answer: "All of the above"
+    question: "Which function is used to serialize an object into a JSON string in Javascript?",
+    selections: ["stringify()", "parse()", "convert()", "None of the above"],
+    answer: "stringify()"
 },
 {
-    question: "Arrays in JavaScript can be used to store?",
-    selections: ["Numbers and strings", "Booleans", "Other arrays", "All of the above"],
-    answer: "All of the above"
+    question: "Which of the following keywords is used to define a variable in Javascript?",
+    selections: ["var", "let", "Both A and B", "None of the above"],
+    answer: "Both A and B"
 },
 {
-    question: "Arrays in JavaScript can be used to store?",
-    selections: ["Numbers and strings", "Booleans", "Other arrays", "All of the above"],
-    answer: "All of the above"
+    question: "How can a datatype be declared to be a constant type?",
+    selections: ["const", "var", "let", "constant"],
+    answer: "const"
 },
 ]
 
