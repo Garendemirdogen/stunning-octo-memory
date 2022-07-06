@@ -1,8 +1,13 @@
 .top-text {
     background-color: white;
     display: flex;  
+
 }
 
 .timer {
-    align-items: center;
+    margin-left: 10px;
+}
+
+.btn {
+    background-color: purple;
 }
