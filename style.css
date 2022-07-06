@@ -27,6 +27,13 @@ body {
     padding: 20px 70px 20px 50px; 
 }
 
+.answer-selection {
+    background-color: purple;
+    padding: 20px 50px 20px 35px;
+    
+}
+
+
 .text-black {
     font-weight: 900;
     text-align: center;

@@ -61,3 +61,11 @@ function endQuiz() {
 };
 
 startButton.addEventListener("click", startQuiz);
+
+var selectionArray = document.querySelectorAll("#test-container .answer-selection");
+    for ( i = 0; i < selectionArray.length; i++) {
+        selectionArray[i].addEventListener("click", function(event) {
+            checkAnswers(event);
+        });
+    }
+
