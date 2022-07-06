@@ -1,18 +1,35 @@
-.top-text {
-    background-color: white;
-    display: flex;  
-
+nav {
+    box-sizing: border-box;
 }
 
-.timer {
-    margin-left: 10px;
+a {
+    color: blueviolet;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+.top {
+    position: relative;
+    background-color: white;
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .btn {
     background-color: purple;
     padding: 20px 70px 20px 50px; 
-    text-align: center;  
-    font-weight: 900; 
+}
+
+.text-black {
+    font-weight: 900;
+    text-align: center;
+    color: black;
+    font-size: 30px;
 }
 
 .top-link {
