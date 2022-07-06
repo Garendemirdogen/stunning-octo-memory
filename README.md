@@ -9,5 +9,4 @@ https://github.com/Garendemirdogen/stunning-octo-memory.git
 ## Live URL Link
 ******
 
-##Created by
-Garen Demirdogen 2022
+Created by Garen Demirdogen 2022
