@@ -5,10 +5,10 @@ var testContainer = document.getElementById("test-container");
 var finishContainer = document.getElementById("finish-container");
 // Variables for questions
 var questionMain = document.querySelector("#test-container .questions");
-var selection1 = document.querySelector("#test-container #selection1");
-var selection2 = document.querySelector("#test-container #selection2");
-var selection3 = document.querySelector("#test-container #selection3");
-var selection4 = document.querySelector("#test-container #selection4");
+var selection1 = document.querySelector("#test-container #selection-1");
+var selection2 = document.querySelector("#test-container #selection-2");
+var selection3 = document.querySelector("#test-container #selection-3");
+var selection4 = document.querySelector("#test-container #selection-4");
 // Variables for timer
 var timer;
 var time = 75;
@@ -20,7 +20,22 @@ var questions = [
     question: "Arrays in JavaScript can be used to store?",
     selections: ["Numbers and strings", "Booleans", "Other arrays", "All of the above"],
     answer: "All of the above"
-}
+},
+{
+    question: "Arrays in JavaScript can be used to store?",
+    selections: ["Numbers and strings", "Booleans", "Other arrays", "All of the above"],
+    answer: "All of the above"
+},
+{
+    question: "Arrays in JavaScript can be used to store?",
+    selections: ["Numbers and strings", "Booleans", "Other arrays", "All of the above"],
+    answer: "All of the above"
+},
+{
+    question: "Arrays in JavaScript can be used to store?",
+    selections: ["Numbers and strings", "Booleans", "Other arrays", "All of the above"],
+    answer: "All of the above"
+},
 ]
 
 function startQuiz() {
@@ -45,7 +60,7 @@ function startQuiz() {
 };
 
 function promptQuestion () {
-    questionMain.textContent = questions[index].selection;
+    questionMain.textContent = questions[index].question;
     // Make a selection
     selection1.textContent = questions[index].selections[0];
     selection2.textContent = questions[index].selections[1];
@@ -69,3 +84,30 @@ var selectionArray = document.querySelectorAll("#test-container .answer-selectio
         });
     }
 
+function checkAnswers(event) {
+    setTimeout(function() {
+    if (document.querySelector("#correct").classList.contains("hide") === false) {
+        document.querySelector("#correct").classList.add("hide");
+    }
+    else if (document.querySelector("#wrong").classList.contains("hide") === false) {
+        document.querySelector("#wrong").classList.add("hide");
+    };
+    if (index === questions.length) {
+        endQuiz();
+        return
+    }
+    promptQuestion();
+    
+}, 500);
+
+if (event.target.textContent === questions[index].answer) {
+    score = score + 30;
+    document.querySelector("#correct").classList.remove("hide");
+}
+else { 
+    time = time - 10;
+    document.querySelector("#wrong").classList.remove("hide");
+};
+index++;
+
+};
