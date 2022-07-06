@@ -1,6 +1,8 @@
 .top-text {
     background-color: white;
-    display: block
-    
-    
+    display: flex;  
+}
+
+.timer {
+    align-items: center;
 }
