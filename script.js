@@ -110,4 +110,23 @@ else {
 };
 index++;
 
-};
+}
+
+document.querySelector(".submit-btn").addEventListener("click", storeData);
+
+function storeData() {
+    if (localStorage.getItem("data") === null) {
+        var data = [];
+        localStorage.setItem("data", JSON.stringify(data));
+    }
+    var userInput = document.querySelector("finish-container input");
+    if (userInput !== "") {
+        data = JSON.parse(localStorage.getItem("data"));
+        var newData = userInput.value + "-" + score;
+        data.push(newData);
+        localStorage.setItem("data", JSON.stringify(data));
+        window.location.replace("highscores.html");
+    };
+}
+
+
