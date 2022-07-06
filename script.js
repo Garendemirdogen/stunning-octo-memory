@@ -15,11 +15,13 @@ var time = 75;
 var score = 0;
 var index = 0;
 // Variables to set the questions
-var questions = {
+var questions = [
+    {
     question: "Arrays in JavaScript can be used to store?",
     selections: ["Numbers and strings", "Booleans", "Other arrays", "All of the above"],
     answer: "All of the above"
-};
+}
+]
 
 function startQuiz() {
     // Hide the start button at the start of the quiz
@@ -40,6 +42,22 @@ function startQuiz() {
     }, 1000);
 
     promptQuestion()
+};
+
+function promptQuestion () {
+    questionMain.textContent = questions[index].selection;
+    // Make a selection
+    selection1.textContent = questions[index].selections[0];
+    selection2.textContent = questions[index].selections[1];
+    selection3.textContent = questions[index].selections[2];
+    selection4.textContent = questions[index].selections[3];
+};
+
+function endQuiz() {
+    testContainer.classList.add("hide");
+    finishContainer.classList.remove("hide")
+    document.querySelector("#results").textContent = score;
+    clearInterval(timer);
 };
 
 startButton.addEventListener("click", startQuiz);

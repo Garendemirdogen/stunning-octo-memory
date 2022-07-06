@@ -18,6 +18,10 @@ a {
 
 }
 
+body {
+    text-align: center;
+}
+
 .btn {
     background-color: purple;
     padding: 20px 70px 20px 50px; 
@@ -28,4 +32,8 @@ a {
     text-align: center;
     color: black;
     font-size: 30px;
+}
+
+.hide {
+    display: none;
 }
