@@ -8,8 +8,6 @@ a {
     background-color: transparent;
 }
 
-
-
 .top {
     position: relative;
     background-color: white;
@@ -30,8 +28,4 @@ a {
     text-align: center;
     color: black;
     font-size: 30px;
-}
-
-.top-link {
-    
 }
