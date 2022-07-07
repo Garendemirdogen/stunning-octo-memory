@@ -8,9 +8,9 @@ GIVEN I am taking a code quiz
 - [x] WHEN I answer a question incorrectly
 - [x] THEN time is subtracted from the clock
 - [x] WHEN all questions are answered or the timer reaches 0
-- [ ] THEN the game is over
-- [ ] WHEN the game is over
-- [ ] THEN I can save my initials and score
+- [x] THEN the game is over
+- [x] WHEN the game is over
+- [x] THEN I can save my initials and score
 
 ## GitHub Repository Link
 https://github.com/Garendemirdogen/stunning-octo-memory.git

@@ -106,7 +106,7 @@ if (event.target.textContent === questions[index].answer) {
     document.querySelector("#correct").classList.remove("hide");
 }
 else { 
-    time = time - 20;
+    time = time - 10;
     document.querySelector("#wrong").classList.remove("hide");
 };
 index++;
