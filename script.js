@@ -58,7 +58,7 @@ function startQuiz() {
 
     promptQuestion()
 };
-
+// Question prompts
 function promptQuestion () {
     questionMain.textContent = questions[index].question;
     // Make a selection
@@ -67,7 +67,7 @@ function promptQuestion () {
     selection3.textContent = questions[index].selections[2];
     selection4.textContent = questions[index].selections[3];
 };
-
+// Runs the endquiz function hides questions/removes hide on finish container
 function endQuiz() {
     testContainer.classList.add("hide");
     finishContainer.classList.remove("hide");
@@ -100,7 +100,7 @@ function checkAnswers(event) {
     promptQuestion();
     
 }, 500);
-
+// Check if answer is correct and add score, if wrong then decrease timer
 if (event.target.textContent === questions[index].answer) {
     score = score + 30;
     document.querySelector("#correct").classList.remove("hide");
@@ -112,9 +112,9 @@ else {
 index++;
 
 }
-
+// function to submit score
 document.querySelector(".submit-btn").addEventListener("click", submitHighscore);
-
+// run the submit function and direct user to high score html
 function submitHighscore() {
     if (localStorage.getItem("data") === null) {
         var data = [];
