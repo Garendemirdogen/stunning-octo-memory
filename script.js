@@ -51,7 +51,7 @@ function startQuiz() {
         document.querySelector(".timer").textContent = time;
         // If timer hits 0 then end the quiz
         if (time <=0) {
-            document.querySelector("#finsih-container").textContent = "Time's up! Lets see how you did!";
+            document.querySelector("#finish-container").textContent = "Time's up! Lets see how you did!";
             endQuiz();
         }
     }, 1000);
@@ -70,8 +70,8 @@ function promptQuestion () {
 
 function endQuiz() {
     testContainer.classList.add("hide");
-    finishContainer.classList.remove("hide")
-    document.querySelector("#results").textContent = score;
+    finishContainer.classList.remove("hide");
+    document.querySelector("#score").textContent = score;
     clearInterval(timer);
 };
 
@@ -81,6 +81,7 @@ var selectionArray = document.querySelectorAll("#test-container .answer-selectio
     for ( i = 0; i < selectionArray.length; i++) {
         selectionArray[i].addEventListener("click", function(event) {
             checkAnswers(event);
+            console.log(score);
         });
     }
 
@@ -112,16 +113,17 @@ index++;
 
 }
 
-document.querySelector(".submit-btn").addEventListener("click", storeData);
+document.querySelector(".submit-btn").addEventListener("click", submitHighscore);
 
-function storeData() {
+function submitHighscore() {
     if (localStorage.getItem("data") === null) {
         var data = [];
         localStorage.setItem("data", JSON.stringify(data));
     }
-    var userInput = document.querySelector("finish-container input");
+    var userInput = document.querySelector("#finish-container input");
     if (userInput !== "") {
         data = JSON.parse(localStorage.getItem("data"));
+        console.log(userInput);
         var newData = userInput.value + "-" + score;
         data.push(newData);
         localStorage.setItem("data", JSON.stringify(data));
