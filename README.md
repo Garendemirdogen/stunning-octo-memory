@@ -1,8 +1,16 @@
 # Timed Coding Quiz
 
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+GIVEN I am taking a code quiz
+- [x] WHEN I click the start button
+- [x] THEN a timer starts and I am presented with a question
+- [x] WHEN I answer a question
+- [x] THEN I am presented with another question
+- [x] WHEN I answer a question incorrectly
+- [x] THEN time is subtracted from the clock
+- [x] WHEN all questions are answered or the timer reaches 0
+- [ ] THEN the game is over
+- [ ] WHEN the game is over
+- [ ] THEN I can save my initials and score
 
 ## GitHub Repository Link
 https://github.com/Garendemirdogen/stunning-octo-memory.git
