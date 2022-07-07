@@ -7,10 +7,14 @@
 - [x] WHEN all questions are answered or the timer reaches 0 THEN the game is over
 - [x] WHEN the game is over THEN I can save my initials and score
 
-# Screenshots of live link
+# Screenshots
+# Start Page
 ![Start-Quiz](./images/start.png)
+# Question Page
 ![Questions](./images/questions.png)
+# Submit Score Page
 ![Submit-Score-Screen](./images/submit.png)
+# Highscore Page
 ![Highscores-Page](./images/highscore.png)
 
 ## GitHub Repository Link
