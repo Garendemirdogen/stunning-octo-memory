@@ -39,6 +39,16 @@ body {
     padding: 20px 70px 20px 50px; 
 }
 
+.btn2 {
+    background-color: purple;
+    padding: 10px 20px 10px 10px;
+}
+
+.btn2:hover {
+    opacity: .8;
+    color: lavender;
+}
+
 .btn:hover {
     opacity: .8;
     color: lavender;

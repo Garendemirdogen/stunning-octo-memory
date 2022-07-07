@@ -3,7 +3,6 @@ var startButton = document.getElementById("start-button");
 var startContainer = document.getElementById("start-container");
 var testContainer = document.getElementById("test-container");
 var finishContainer = document.getElementById("finish-container");
-// Variables for questions
 var questionMain = document.querySelector("#test-container .questions");
 var selection1 = document.querySelector("#test-container #selection-1");
 var selection2 = document.querySelector("#test-container #selection-2");
@@ -14,6 +13,7 @@ var timer;
 var time = 75;
 var score = 0;
 var index = 0;
+
 // Variables to set the questions
 var questions = [
     {
@@ -105,7 +105,7 @@ if (event.target.textContent === questions[index].answer) {
     document.querySelector("#correct").classList.remove("hide");
 }
 else { 
-    time = time - 10;
+    time = time - 20;
     document.querySelector("#wrong").classList.remove("hide");
 };
 index++;
