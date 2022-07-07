@@ -1,6 +1,4 @@
 # Timed Coding Quiz
-
-GIVEN I am taking a code quiz
 - [x] WHEN I click the start button
 - [x] THEN a timer starts and I am presented with a question
 - [x] WHEN I answer a question
@@ -15,6 +13,6 @@ GIVEN I am taking a code quiz
 ## GitHub Repository Link
 https://github.com/Garendemirdogen/stunning-octo-memory.git
 ## Live URL Link
-******
+https://garendemirdogen.github.io/stunning-octo-memory/
 
 Created by Garen Demirdogen 2022
